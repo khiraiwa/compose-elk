@@ -31,6 +31,8 @@ logstash:
 # tdagent
 tdagent:
   image: khiraiwa/docker-tdagent
+  volumes:
+    - /data_tdagent:/etc/td-agent
   links:
     - elasticsearch:docker-elasticsearch
   environment:
