@@ -27,3 +27,12 @@ logstash:
   environment:
     - AWS_ACCESS_KEY_ID=dummy
     - AWS_SECRET_ACCESS_KEY=dummy
+
+# tdagent
+tdagent:
+  image: khiraiwa/docker-tdagent
+  links:
+    - elasticsearch:docker-elasticsearch
+  environment:
+    - AWS_ACCESS_KEY_ID=dummy
+    - AWS_SECRET_ACCESS_KEY=dummy
