@@ -1,6 +1,6 @@
 # elasticsearch
 elasticsearch:
-  image: khiraiwa/docker-elasticsearch
+  image: khiraiwa/docker-elasticsearch:1.0.0
   volumes:
     - /data_elasticsearch:/data_elasticsearch
   ports:
@@ -9,7 +9,7 @@ elasticsearch:
 
 # kibana
 kibana:
-  image: khiraiwa/docker-kibana
+  image: khiraiwa/docker-kibana:1.0.0
   volumes:
     - /data_kibana:/data_kibana
   ports:
@@ -19,7 +19,7 @@ kibana:
 
 # logstash
 logstash:
-  image: khiraiwa/docker-logstash
+  image: khiraiwa/docker-logstash:1.0.0
   volumes:
     - /data_logstash:/data_logstash
   links:
@@ -30,7 +30,7 @@ logstash:
 
 # tdagent
 tdagent:
-  image: khiraiwa/docker-tdagent
+  image: khiraiwa/docker-tdagent:1.0.0
   volumes:
     - /data_tdagent:/etc/td-agent
   links:
